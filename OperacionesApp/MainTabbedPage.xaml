@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OperacionesApp.MainTabbedPage">
+    <TabbedPage.Children>
+        <ContentPage Title="Área del cuadrado">
+            <StackLayout Padding="10">
+                <Entry x:Name="SideEntry" Placeholder="Ingresa el lado" Keyboard="Numeric"/>
+                <Button Text="Calcular Área" Clicked="OnCalculateSquareArea"/>
+                <Label x:Name="SquareAreaResult" Text="Resultado:"/>
+                <Button Text="Limpiar" Clicked="OnClearFields"/>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Área del círculo">
+            <StackLayout Padding="10">
+                <Entry x:Name="RadiusEntry" Placeholder="Ingresa el radio" Keyboard="Numeric"/>
+                <Button Text="Calcular Área" Clicked="OnCalculateCircleArea"/>
+                <Label x:Name="CircleAreaResult" Text="Resultado:"/>
+                <Button Text="Limpiar" Clicked="OnClearFields"/>
+            </StackLayout>
+        </ContentPage>
+        <ContentPage Title="Área del rectángulo">
+            <StackLayout Padding="10">
+                <Entry x:Name="WidthEntry" Placeholder="Ingresa el ancho" Keyboard="Numeric"/>
+                <Entry x:Name="HeightEntry" Placeholder="Ingresa la altura" Keyboard="Numeric"/>
+                <Button Text="Calcular Área" Clicked="OnCalculateRectangleArea"/>
+                <Label x:Name="RectangleAreaResult" Text="Resultado:"/>
+                <Button Text="Limpiar" Clicked="OnClearFields"/>
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
